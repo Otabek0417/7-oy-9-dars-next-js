@@ -6,6 +6,7 @@ const getData = async () => {
   const data = await req.json();
   return data;
 };
+  
 async function Articles() {
   const { articles } = await getData();
   return (

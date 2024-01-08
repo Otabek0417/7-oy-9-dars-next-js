@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 function ArticlesList({ articles }) {
+  console.log(articles);
   return (
     <div className="mt-7">
       <ul className="flex flex-col gap-4">
-        {articles.map((article) => {
+        {articles?.map((article) => {
           return (
             <li className="bg-neutral-100 shadow rounded-lg" key={article.id}>
               <div className="px-6 py-5">
